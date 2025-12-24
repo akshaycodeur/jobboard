@@ -1,0 +1,124 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "PixelWorks Studio",
+      "location": "Toronto, ON",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid-level",
+      "salaryRange": "80,000–95,000 CAD",
+      "skills": ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
+      "description": "Build and maintain modern user interfaces using React and Tailwind CSS.",
+      "postedDate": "2025-01-05"
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "company": "CloudCore Systems",
+      "location": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "salaryRange": "100,000–120,000 CAD",
+      "skills": ["Node.js", "Express", "PostgreSQL", "REST APIs"],
+      "description": "Design scalable backend services and APIs for cloud-based applications.",
+      "postedDate": "2025-01-06"
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Designer",
+      "company": "BrightLabs",
+      "location": "Vancouver, BC",
+      "employmentType": "Contract",
+      "experienceLevel": "Mid-level",
+      "salaryRange": "55–70 CAD/hour",
+      "skills": ["Figma", "User Research", "Wireframing", "Prototyping"],
+      "description": "Create intuitive user experiences and design systems for web products.",
+      "postedDate": "2025-01-07"
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer",
+      "company": "InfraStack",
+      "location": "Calgary, AB",
+      "employmentType": "Full-time",
+      "experienceLevel": "Senior",
+      "salaryRange": "110,000–130,000 CAD",
+      "skills": ["AWS", "Docker", "Kubernetes", "CI/CD"],
+      "description": "Manage cloud infrastructure and automate deployment pipelines.",
+      "postedDate": "2025-01-08"
+    },
+    {
+      "id": 5,
+      "title": "Junior Web Developer",
+      "company": "StartupNest",
+      "location": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "salaryRange": "55,000–65,000 CAD",
+      "skills": ["HTML", "CSS", "JavaScript", "Git"],
+      "description": "Assist in building and maintaining responsive websites.",
+      "postedDate": "2025-01-08"
+    },
+    {
+      "id": 6,
+      "title": "Product Manager",
+      "company": "Visionary Tech",
+      "location": "Montreal, QC",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid-level",
+      "salaryRange": "90,000–105,000 CAD",
+      "skills": ["Agile", "Roadmapping", "Stakeholder Management"],
+      "description": "Lead product strategy and coordinate cross-functional teams.",
+      "postedDate": "2025-01-09"
+    },
+    {
+      "id": 7,
+      "title": "Data Analyst",
+      "company": "Insight Analytics",
+      "location": "Ottawa, ON",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid-level",
+      "salaryRange": "75,000–90,000 CAD",
+      "skills": ["SQL", "Python", "Power BI", "Data Visualization"],
+      "description": "Analyze datasets and generate insights to support business decisions.",
+      "postedDate": "2025-01-10"
+    },
+    {
+      "id": 8,
+      "title": "Mobile App Developer",
+      "company": "AppForge",
+      "location": "Remote",
+      "employmentType": "Contract",
+      "experienceLevel": "Mid-level",
+      "salaryRange": "70–85 CAD/hour",
+      "skills": ["React Native", "iOS", "Android"],
+      "description": "Develop cross-platform mobile applications using React Native.",
+      "postedDate": "2025-01-10"
+    },
+    {
+      "id": 9,
+      "title": "QA Engineer",
+      "company": "QualityFirst",
+      "location": "Waterloo, ON",
+      "employmentType": "Full-time",
+      "experienceLevel": "Junior",
+      "salaryRange": "60,000–75,000 CAD",
+      "skills": ["Manual Testing", "Automation", "Cypress", "Jest"],
+      "description": "Test web applications and ensure high product quality.",
+      "postedDate": "2025-01-11"
+    },
+    {
+      "id": 10,
+      "title": "Game Developer",
+      "company": "RetroPixel Games",
+      "location": "Remote",
+      "employmentType": "Full-time",
+      "experienceLevel": "Mid-level",
+      "salaryRange": "85,000–100,000 CAD",
+      "skills": ["JavaScript", "Three.js", "Game Design"],
+      "description": "Develop interactive browser-based games with a retro aesthetic.",
+      "postedDate": "2025-01-12"
+    }
+  ]
+}
