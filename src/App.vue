@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
 import Card from "./components/Card.vue";
@@ -7,10 +6,14 @@ const cardDetails = [
   {
     title: "Frontend Developer Roles",
     subtitle: "Browse and manage your frontend developer job applications",
+    backgroundColor: "bg-slate-700",
+    textColor: "text-white",
   },
   {
     title: "Backend Developer Roles",
     subtitle: "Browse and manage your backend developer job applications",
+    backgroundColor: "bg-sky-700",
+    textColor: "text-red-900",
   },
 ];
 </script>
@@ -23,7 +26,12 @@ const cardDetails = [
   />
   <div class="flex mx-auto w-full justify-center space-x-6 my-6">
     <li v-for="details in cardDetails">
-      <Card :title="details.title" :subtitle="details.subtitle" />
+      <Card
+        :title="details.title"
+        :subtitle="details.subtitle"
+        :backgroundColor="details.backgroundColor"
+        :textColor="details.textColor"
+      />
     </li>
   </div>
 </template>
