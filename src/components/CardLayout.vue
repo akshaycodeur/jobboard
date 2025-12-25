@@ -13,9 +13,7 @@ defineProps({
 </script>
 
 <template>
-  <div
-    class="w-full max-w-sm rounded-md p-5 {{ backgroundColor }} {{ textColor }}"
-  >
+  <div v-bind:class="['text-xl p-5 rounded-md', backgroundColor, textColor]">
     <slot></slot>
   </div>
 </template>

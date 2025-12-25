@@ -15,9 +15,9 @@ defineProps({
 
 <template>
   <CardLayout class="{{ backgroundColor }} {{ textColor }}">
-    <h2 class="text-xl font-semibold mb-3 underline">{{ title }}</h2>
-    <p class="mb-3">{{ subtitle }}</p>
-    <a href="" class="bg-sky-400 text-white p-2 rounded-md"
+    <h2 class="text-xl font-semibold mb-3">{{ title }}</h2>
+    <p class="mb-5">{{ subtitle }}</p>
+    <a href="" class="bg-sky-400 text-white p-2 rounded-md mt-10"
       >Browse Applications</a
     >
   </CardLayout>
