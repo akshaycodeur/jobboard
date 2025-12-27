@@ -1,14 +1,23 @@
 <script setup>
-import jobListingsData from "@/jobs.json";
+import jobListingsData from "../jobs.json";
+import JobCard from "./JobCard.vue";
 </script>
 
 <template>
   <div class="container max-w-6xl mx-auto">
-    <h1 class="text-xl font-semibold">This is a simple job listing</h1>
+    <h1 class="text-2xl font-semibold">Job Listing</h1>
     <hr />
-    <div v-for="job in jobListingsData">
-      <h2 class="text-lg font-bold">{{ job.position }}</h2>
-      <p class="mb-4">{{ job.company }} - {{ job.location }}</p>
+    <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
+ <div v-for="job in jobListingsData.jobs"">
+      <JobCard
+        :title="job.title"
+        :description="job.description"
+        :company="job.company"
+        :salary="job.salaryRange"
+        :datePosted="job.postedDate"
+        :id="job.id"
+      />
+    </div>
     </div>
   </div>
 </template>
