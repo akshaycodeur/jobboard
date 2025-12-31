@@ -9,7 +9,7 @@
       "experienceLevel": "Mid-level",
       "salaryRange": "80,000–95,000 CAD",
       "skills": ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
-      "description": "Build and maintain modern user interfaces using React and Tailwind CSS.",
+      "description": "Build and maintain modern, responsive user interfaces using React and Tailwind CSS. Collaborate with designers and backend developers to deliver accessible, high-performance web experiences across browsers and devices.",
       "postedDate": "2025-01-05"
     },
     {
@@ -21,7 +21,7 @@
       "experienceLevel": "Senior",
       "salaryRange": "100,000–120,000 CAD",
       "skills": ["Node.js", "Express", "PostgreSQL", "REST APIs"],
-      "description": "Design scalable backend services and APIs for cloud-based applications.",
+      "description": "Design, develop, and maintain scalable backend services and REST APIs. Optimize database performance, ensure system security, and support cloud-based applications used by thousands of active users.",
       "postedDate": "2025-01-06"
     },
     {
@@ -33,7 +33,7 @@
       "experienceLevel": "Mid-level",
       "salaryRange": "55–70 CAD/hour",
       "skills": ["Figma", "User Research", "Wireframing", "Prototyping"],
-      "description": "Create intuitive user experiences and design systems for web products.",
+      "description": "Create intuitive user experiences through research-driven design. Produce wireframes, prototypes, and design systems while collaborating closely with developers to ensure usability and visual consistency.",
       "postedDate": "2025-01-07"
     },
     {
@@ -45,7 +45,7 @@
       "experienceLevel": "Senior",
       "salaryRange": "110,000–130,000 CAD",
       "skills": ["AWS", "Docker", "Kubernetes", "CI/CD"],
-      "description": "Manage cloud infrastructure and automate deployment pipelines.",
+      "description": "Manage cloud infrastructure and automate CI/CD pipelines. Ensure system reliability, scalability, and security while improving deployment workflows and monitoring production environments.",
       "postedDate": "2025-01-08"
     },
     {
@@ -57,7 +57,7 @@
       "experienceLevel": "Junior",
       "salaryRange": "55,000–65,000 CAD",
       "skills": ["HTML", "CSS", "JavaScript", "Git"],
-      "description": "Assist in building and maintaining responsive websites.",
+      "description": "Assist in building and maintaining responsive websites. Work with senior developers to fix bugs, implement new features, and learn modern development workflows in a fast-paced startup environment.",
       "postedDate": "2025-01-08"
     },
     {
@@ -69,7 +69,7 @@
       "experienceLevel": "Mid-level",
       "salaryRange": "90,000–105,000 CAD",
       "skills": ["Agile", "Roadmapping", "Stakeholder Management"],
-      "description": "Lead product strategy and coordinate cross-functional teams.",
+      "description": "Lead product strategy from concept to launch. Define roadmaps, gather requirements, prioritize features, and coordinate cross-functional teams to deliver valuable, user-focused solutions.",
       "postedDate": "2025-01-09"
     },
     {
@@ -81,7 +81,7 @@
       "experienceLevel": "Mid-level",
       "salaryRange": "75,000–90,000 CAD",
       "skills": ["SQL", "Python", "Power BI", "Data Visualization"],
-      "description": "Analyze datasets and generate insights to support business decisions.",
+      "description": "Analyze complex datasets to uncover trends and insights. Build dashboards and reports that support data-driven decision-making across marketing, operations, and executive teams.",
       "postedDate": "2025-01-10"
     },
     {
@@ -93,7 +93,7 @@
       "experienceLevel": "Mid-level",
       "salaryRange": "70–85 CAD/hour",
       "skills": ["React Native", "iOS", "Android"],
-      "description": "Develop cross-platform mobile applications using React Native.",
+      "description": "Develop and maintain cross-platform mobile applications using React Native. Ensure smooth performance, clean architecture, and consistent user experiences on both iOS and Android platforms.",
       "postedDate": "2025-01-10"
     },
     {
@@ -105,7 +105,7 @@
       "experienceLevel": "Junior",
       "salaryRange": "60,000–75,000 CAD",
       "skills": ["Manual Testing", "Automation", "Cypress", "Jest"],
-      "description": "Test web applications and ensure high product quality.",
+      "description": "Test web applications through manual and automated methods. Identify bugs, verify fixes, and collaborate with developers to ensure reliable, high-quality releases before production.",
       "postedDate": "2025-01-11"
     },
     {
@@ -117,7 +117,7 @@
       "experienceLevel": "Mid-level",
       "salaryRange": "85,000–100,000 CAD",
       "skills": ["JavaScript", "Three.js", "Game Design"],
-      "description": "Develop interactive browser-based games with a retro aesthetic.",
+      "description": "Develop interactive browser-based games with a retro-inspired aesthetic. Implement gameplay mechanics, animations, and performance optimizations using JavaScript and Three.js.",
       "postedDate": "2025-01-12"
     }
   ]
