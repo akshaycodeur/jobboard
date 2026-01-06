@@ -1,8 +1,11 @@
 <script setup>
+import { ref } from 'vue';
+import { defineProps } from "vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue";
 import Card from "./components/Card.vue";
 import JobListings from "./components/JobListings.vue";
+
 const cardDetails = [
   {
     title: "Frontend Developer Roles",
@@ -17,6 +20,13 @@ const cardDetails = [
     textColor: "text-slate-100",
   },
 ];
+
+const showCard = ref(3);
+
+const loadMore = () => {
+  showCard.value += 3;
+};
+
 </script>
 
 <template>
@@ -35,5 +45,10 @@ const cardDetails = [
       />
     </div>
   </div>
-  <JobListings />
+  <JobListings :showCard="showCard" />
+  <div class="max-w-sm mx-auto text-center">
+    <button class="px-3 py-2 text-lg bg-orange-300 hover:bg-orange-400 focus:outline-none" @click="loadMore">
+      Load more
+    </button>
+  </div>
 </template>

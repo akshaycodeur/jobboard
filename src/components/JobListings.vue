@@ -1,14 +1,15 @@
 <script setup>
 import jobListingsData from "../jobs.json";
 import JobCard from "./JobCard.vue";
-const jobs = jobListingsData.jobs;
 
 defineProps({
-  numberOfJobs: {
-    type: number,
-    default: 2,
-  },
+  showCard: {
+    type: Number,
+    default: 3
+  }
 });
+
+const jobs = jobListingsData.jobs;
 </script>
 
 <template>
@@ -16,16 +17,16 @@ defineProps({
     <h1 class="text-2xl font-semibold">Job Listing</h1>
     <hr />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
-      <div
-        v-for="job in jobs.slice(0, numberOfJobs)"
+      <div v-for="job in jobs.slice(0, showCard)">
         <JobCard
-        :title="job.title"
-        :description="job.description"
-        :company="job.company"
-        :salary="job.salaryRange"
-        :datePosted="job.postedDate"
-        :id="job.id"
-      />
+          :title="job.title"
+          :description="job.description"
+          :company="job.company"
+          :salary="job.salaryRange"
+          :datePosted="job.postedDate"  
+          :id="job.id"
+        />
+      </div>
     </div>
   </div>
 </template>
