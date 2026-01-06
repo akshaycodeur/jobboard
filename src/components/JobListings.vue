@@ -2,14 +2,13 @@
 import jobListingsData from "../jobs.json";
 import JobCard from "./JobCard.vue";
 
-defineProps({
-  showCard: {
-    type: Number,
-    default: 3
-  }
-});
-
 const jobs = jobListingsData.jobs;
+
+defineProps({
+  showCard : {
+    type: Number,
+  }
+})
 </script>
 
 <template>
