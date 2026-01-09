@@ -1,11 +1,33 @@
 <script setup>
+import { ref } from "vue";
 import Hero from "../components/Hero.vue";
 import Card from "../components/Card.vue";
 import JobListings from "../components/JobListings.vue";
+
+const cardDetails = [
+  {
+    title: "Frontend Developer Roles",
+    subtitle: "Browse and manage your frontend developer job applications",
+    backgroundColor: "bg-slate-700",
+    textColor: "text-white",
+  },
+  {
+    title: "Backend Developer Roles",
+    subtitle: "Browse and manage your backend developer job applications",
+    backgroundColor: "bg-sky-700",
+    textColor: "text-slate-100",
+  },
+];
+
+const showCard = ref(3);
+
+const delimit = () => {
+  showCard.value += 3;
+};
 </script>
 
 <template>
-    <Hero
+  <Hero
     title="Welcome to your Job tracking board"
     subheading="Organize your job applications"
   />
@@ -21,7 +43,10 @@ import JobListings from "../components/JobListings.vue";
   </div>
   <JobListings :showCard="showCard" />
   <div class="max-w-sm mx-auto text-center">
-    <button class="px-3 py-2 text-lg bg-orange-300 hover:bg-orange-400 focus:outline-none" @click="delimit">
+    <button
+      class="px-3 py-2 text-lg bg-orange-300 hover:bg-orange-400 focus:outline-none"
+      @click="delimit"
+    >
       Load more
     </button>
   </div>
