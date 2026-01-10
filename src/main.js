@@ -3,7 +3,7 @@ import "./style.css";
 import App from "./App.vue";
 import router from "./router";
 
-const App = createApp(App);
+const Appx = createApp(App);
 
-App.use(router);
-App.mount("#app");
+Appx.use(router);
+Appx.mount("#app");

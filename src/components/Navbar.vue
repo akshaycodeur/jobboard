@@ -10,16 +10,16 @@
         </div>
 
         <div class="hidden md:flex items-center space-x-8">
-          <a href="#" class="text-white hover:text-slate-600 font-medium"
-            >Home</a
+          <router-link to="/" class="text-white hover:text-slate-600 font-medium"
+            >Home</router-link
           >
-          <a href="#" class="text-white hover:text-slate-600 font-medium"
-            >Listings</a
+          <router-link to="/jobs" class="text-white hover:text-slate-600 font-medium"
+            >Listings</router-link
           >
-          <a
-            href="#"
+          <router-link
+            href="/add-job"
             class="bg-slate-600 text-white px-4 py-2 rounded-md hover:bg-slate-700"
-            >Add Job</a
+            >Add Job</router-link
           >
         </div>
 
@@ -60,20 +60,20 @@
       class="hidden md:hidden bg-white border-t border-gray-200"
     >
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <a
-          href="#"
+        <router-link
+          to="/"
           class="block px-3 py-2 text-white hover:text-slate-600 hover:bg-gray-50 rounded-md font-medium"
-          >Home</a
+          >Home</router-link
         >
-        <a
-          href="#"
+        <router-link
+          to="/jobs"
           class="block px-3 py-2 text-white hover:text-slate-600 hover:bg-gray-50 rounded-md font-medium"
-          >Listings</a
+          >Listings</router-link
         >
-        <a
-          href="#"
+        <router-link
+          to="/add-job"
           class="block px-3 py-2 bg-slate-600 text-white rounded-md hover:bg-slate-700 font-medium text-center"
-          >Add Job</a
+          >Add Job</router-link
         >
       </div>
     </div>

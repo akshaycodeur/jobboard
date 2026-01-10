@@ -13,7 +13,7 @@ defineProps({
 
 <template>
   <div class="container max-w-6xl mx-auto">
-    <h1 class="text-2xl font-semibold">Job Listing</h1>
+    <h1 class="text-2xl font-semibold my-7 text-center uppercase">Job Listing</h1>
     <hr />
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
       <div v-for="job in jobs.slice(0, showCard)">

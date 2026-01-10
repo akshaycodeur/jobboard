@@ -38,9 +38,9 @@ defineProps({
       <span class="">{{ salary }}</span>
       <span class="">{{ datePosted }}</span>
     </div>
-    <a
-      :href="`${id}`"
+    <router-link
+      :to="`/job/${id}`"
       class="absolute w-full h-full -top-4 left-0 text-white rounded-md z-20 cursor-pointer"
-    ></a>
+    ></router-link>
   </div>
 </template>
