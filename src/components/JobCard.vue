@@ -39,7 +39,7 @@ defineProps({
       <span class="">{{ datePosted }}</span>
     </div>
     <router-link
-      :to="`/job/${id}`"
+      :to="`/jobs/${id}`"
       class="absolute w-full h-full -top-4 left-0 text-white rounded-md z-20 cursor-pointer"
     ></router-link>
   </div>

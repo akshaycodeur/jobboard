@@ -6,18 +6,24 @@
       <div class="flex justify-between h-16">
         <!-- Logo / Brand -->
         <div class="flex items-center">
-          <a href="#" class="text-2xl font-bold text-slate-100">Job Board</a>
+          <router-link to="#" class="text-2xl font-bold text-slate-100"
+            >Job Board</router-link
+          >
         </div>
 
         <div class="hidden md:flex items-center space-x-8">
-          <router-link to="/" class="text-white hover:text-slate-600 font-medium"
+          <router-link
+            to="/"
+            class="text-white hover:text-slate-600 font-medium"
             >Home</router-link
           >
-          <router-link to="/jobs" class="text-white hover:text-slate-600 font-medium"
+          <router-link
+            to="/jobs"
+            class="text-white hover:text-slate-600 font-medium"
             >Listings</router-link
           >
           <router-link
-            href="/add-job"
+            to="/add-job"
             class="bg-slate-600 text-white px-4 py-2 rounded-md hover:bg-slate-700"
             >Add Job</router-link
           >

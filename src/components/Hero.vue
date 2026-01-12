@@ -19,10 +19,10 @@ defineProps({
       <p class="text-lg mb-8">
         {{ subheading }}
       </p>
-      <a
-        href="#"
+      <router-link
+        to="#"
         class="bg-white text-sky-600 px-6 py-3 rounded-md font-semibold hover:bg-slate-100"
-        >Get Started</a
+        >Get Started</router-link
       >
     </div>
   </div>
