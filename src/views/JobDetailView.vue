@@ -1,4 +1,38 @@
-<script setup></script>
+<script setup>
+  import axios from "axios";
+  import {ref, onMount, defineProps} from "vue";
+  import {useRoute} from "vue-router";
+
+defineProps({
+  title: {
+    type: String,
+    default: "Job Title",
+  },
+  company: {
+    type: String,
+    default: "Company Hiring",
+  },
+  description: {
+    type: String,
+    default: "Job Description",
+  },
+  salary: {
+    type: String,
+    default: "0",
+  },
+  datePosted: {
+    type: String,
+    default: "Job Title",
+  },
+  id: {
+    type: Number,
+  },
+});
+
+const route = useRoute();
+const jobId = route.params.id;
+console.log(jobId);
+</script>
 
 <template>
   <div
@@ -27,7 +61,7 @@
                 <h3
                   class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white"
                 >
-                  Senior Frontend Developer
+                  {{ title }}
                 </h3>
                 <p class="text-indigo-600 dark:text-indigo-400 font-medium">
                   StellarTech Solutions
