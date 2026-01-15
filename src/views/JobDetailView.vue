@@ -1,7 +1,7 @@
 <script setup>
-  import axios from "axios";
-  import {ref, onMount, defineProps} from "vue";
-  import {useRoute} from "vue-router";
+    import {ref, onMounted, defineProps} from "vue";
+    import {useRoute} from "vue-router";
+    import axios from "axios";
 
 defineProps({
   title: {
@@ -32,6 +32,18 @@ defineProps({
 const route = useRoute();
 const jobId = route.params.id;
 console.log(jobId);
+const jobDetails = ref([]);
+onMounted(async () => {
+  try {
+    const response = await axios.get(`http://localhost:3000/jobs/${jobId}`);
+    jobDetails.value = response.data;
+    
+  } catch (error) {
+    console.error("Error fetching job listings:", error);
+  }
+});
+
+console.log(jobDetails);
 </script>
 
 <template>
@@ -49,22 +61,14 @@ console.log(jobId);
         <div class="p-6 md:p-8">
           <div class="flex items-start justify-between flex-wrap gap-4 mb-5">
             <div class="flex items-center gap-4">
-              <div
-                class="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-indigo-100 dark:bg-indigo-950/40 flex items-center justify-center flex-shrink-0 overflow-hidden border border-indigo-200 dark:border-indigo-800/50"
-              >
-                <span
-                  class="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400"
-                  >S</span
-                >
-              </div>
               <div>
                 <h3
                   class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white"
                 >
-                  {{ title }}
+                {{ jobDetails.title }}
                 </h3>
                 <p class="text-indigo-600 dark:text-indigo-400 font-medium">
-                  StellarTech Solutions
+{{ jobDetails.company }}
                 </p>
               </div>
             </div>
@@ -74,12 +78,7 @@ console.log(jobId);
                 class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300"
               >
                 <span class="w-2 h-2 rounded-full bg-green-500 mr-1.5"></span>
-                Actively Hiring
-              </span>
-              <span
-                class="px-3 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300"
-              >
-                Featured
+                {{jobDetails.postedDate}}
               </span>
             </div>
           </div>
@@ -87,26 +86,24 @@ console.log(jobId);
           <div class="flex flex-wrap gap-2.5 mb-6">
             <span
               class="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium"
-              >Remote</span
+              >{{jobDetails.location}}</span
             >
             <span
               class="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium"
-              >Full-time</span
+              >{{jobDetails.experienceLevel}}</span
             >
             <span
               class="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium"
-              >$120k–$155k CAD</span
+              >{{jobDetails.salaryRange}}</span
             >
             <span
               class="px-4 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-medium"
-              >Senior level</span
+              >{{ jobDetails.employmentType }}</span
             >
           </div>
 
           <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-            We're looking for an experienced frontend engineer who is passionate
-            about building beautiful, performant user interfaces with modern
-            React + TypeScript + TailwindCSS stack.
+            {{ jobDetails.description }}
           </p>
 
           <div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -114,65 +111,20 @@ console.log(jobId);
               <h4
                 class="font-semibold text-lg mb-3 text-gray-900 dark:text-gray-100"
               >
-                You will
+                Skills
               </h4>
-              <ul class="space-y-2.5 text-gray-700 dark:text-gray-300">
-                <li class="flex items-start gap-2">
-                  <span class="text-indigo-500 dark:text-indigo-400 mt-1.5"
-                    >•</span
-                  >
-                  <span>Lead frontend architecture decisions</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-indigo-500 dark:text-indigo-400 mt-1.5"
-                    >•</span
-                  >
-                  <span>Build and maintain design system</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-indigo-500 dark:text-indigo-400 mt-1.5"
-                    >•</span
-                  >
-                  <span>Optimize for performance & accessibility</span>
+              <ul class="space-y-2.5 text-gray-700 dark:text-gray-300 list list-disc list-inside">
+                <li v-for="skill in jobDetails.skills" :key="skill">
+                  {{ skill }}
                 </li>
               </ul>
             </div>
 
-            <div>
-              <h4
-                class="font-semibold text-lg mb-3 text-gray-900 dark:text-gray-100"
-              >
-                You bring
-              </h4>
-              <ul class="space-y-2.5 text-gray-700 dark:text-gray-300">
-                <li class="flex items-start gap-2">
-                  <span class="text-indigo-500 dark:text-indigo-400 mt-1.5"
-                    >•</span
-                  >
-                  <span>5+ years of frontend experience</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-indigo-500 dark:text-indigo-400 mt-1.5"
-                    >•</span
-                  >
-                  <span>Strong React + TypeScript skills</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-indigo-500 dark:text-indigo-400 mt-1.5"
-                    >•</span
-                  >
-                  <span>Experience with TailwindCSS & modern tooling</span>
-                </li>
-              </ul>
-            </div>
           </div>
 
           <div
             class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-gray-200 dark:border-gray-800"
           >
-            <div class="text-sm text-gray-600 dark:text-gray-400">
-              Posted 3 days ago • Kanata, ON / Remote
-            </div>
 
             <div class="flex gap-3">
               <button
